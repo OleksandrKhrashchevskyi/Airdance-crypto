@@ -1,0 +1,477 @@
+/***************** SPECIAL *************************/
+@font-face {font-family: "Lovelo-Black";src: local('Lovelo-Black'), 
+local('Lovelo-Black'), url("/assets/fonts/Lovelo-Black.ttf") format("truetype");font-display: swap;}
+
+@font-face {font-family: "Lovelo-LineBold";src: local('Lovelo-LineBold'), 
+local('Lovelo-LineBold'), url("/assets/fonts/Lovelo-LineBold.ttf") format("truetype");font-display: swap;}
+
+@font-face {font-family: "Lovelo-LineLight";src: local('Lovelo-LineLight'), 
+local('Lovelo-LineLight'), url("/assets/fonts/Lovelo-LineLight.ttf") format("truetype");font-display: swap;}
+
+@font-face {font-family: "Montserrat-Bold";src: local('Montserrat-Bold'), 
+local('Montserrat-Bold'), url("/assets/fonts/Montserrat-Bold.ttf") format("truetype");font-display: swap;}
+
+
+@font-face {font-family: "Montserrat-Light";src: local('Montserrat-Light'), 
+local('Montserrat-Light'), url("/assets/fonts/Montserrat-Light.ttf") format("truetype");font-display: swap;}
+
+
+
+
+
+
+
+
+
+
+
+html, body{
+	background: #F7F7F7 !important;
+}
+
+/**************** HEADER ****************************/
+header{
+	z-index: 99999999999999999;
+    position: fixed;
+}
+header .container img{
+	left: 0%;
+    width: 250px;
+    position: fixed;
+}
+header .container .nav{
+    position: fixed;
+    top: 37px;   
+    right: 2%;
+    height: 150px;
+    z-index: 5;
+    overflow: hidden;
+    font-size: 20px;
+}
+header .container .nav ul.toggle{
+    position: relative;
+    float: left;
+    height: 30px;   width: 30px;
+    background: rgba(0,0,0,.5);
+    z-index: 2;
+    cursor: pointer;
+}
+header .container .nav ul.toggle.active{
+    background: #EE2B7A;
+    margin-left: 15px;
+}
+header .container .nav ul.toggle li{
+    list-style: none;
+    position: absolute;
+    left: 10%;
+    width: 80%;   height: 3px;
+    background: #fff;
+    transform: translate(0,-50%);
+    transition: .9s;
+}
+header .container .nav ul.toggle li:nth-of-type(1){
+    top: 20%;
+}
+header .container .nav ul.toggle li:nth-of-type(2){
+    top: 50%;
+}
+header .container .nav ul.toggle li:nth-of-type(3){
+    top: 80%;
+}
+header .container .nav ul.toggle.active li:nth-of-type(1){
+    top: 50%;
+    transform: translate(0,-50%) rotate(45deg);
+}
+header .container .nav ul.toggle.active li:nth-of-type(2){
+    left: 100%;
+    opacity: 0;
+}
+header .container .nav ul.toggle.active li:nth-of-type(3){
+    top: 50%;
+    transform: translate(0,-50%) rotate(-45deg);
+}
+header .container .nav ul.top-left-menu{
+    position: relative;
+    float: left;
+    height: 30px;  line-height: 30px;
+    left: 100%;
+    transition: .9s;
+    z-index: 1;
+}
+header .container .nav ul.top-left-menu.active{
+    left: 0;
+}
+header .container .nav ul.top-left-menu li{
+    list-style: none;
+    position: relative;
+    float: left;
+    height: 100%;
+}
+header .container .nav ul.top-left-menu li a{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;   
+    text-transform: uppercase;
+    transition-duration: 2s;
+    font-family: 'Lovelo-Black';
+    font-weight: 900;
+}
+header .container .nav ul.top-left-menu li a:hover{
+	color: #EE2B7A;
+}
+header .container .nav ul.bottom-left-menu{
+	position: absolute;
+    float: none;
+    height: 30px;  line-height: 30px;
+    left: 100%;
+    transition: .9s;
+    z-index: 1;
+}
+header .container .nav ul.bottom-left-menu.active{
+    left: 82%;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+}
+header .container .nav ul.bottom-left-menu li{
+    list-style: none;
+    position: relative;
+    float: left;
+    height: 100%;
+}
+header .container .nav ul.bottom-left-menu li a{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;   
+    text-transform: uppercase;
+    transition-duration: 2s;
+    font-family: 'Lovelo-Black';
+    font-weight: 900;
+}
+header .container .nav ul.bottom-left-menu li a:hover{
+	color: #EE2B7A;
+}
+/**************** FIRST SECTION **************************/
+#main-section-first .video{
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+#main-section-first:before {
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    content: "";
+    height: 100vh;
+}
+/***************************** SECTION SECOND ***********************/
+#main-section-second{
+	position: relative;
+}
+#main-section-second .paralax-text-one{
+	font-size: 300px;
+    text-transform: uppercase;
+    margin: -80px !important;
+    font-weight: 900;
+    color: white;
+}
+#main-section-second .paralax-text-two{
+    text-align: right;
+        font-size: 300px;
+    text-transform: uppercase;
+    margin: -80px !important;
+    font-weight: 900;
+    color: white;
+    margin-right: 30px;
+}
+/***************************** SECTION THIRD ***********************/
+#main-section-third{
+    position: relative;
+}
+#main-section-third:before{
+    background-image: url('/wp-content/themes/airdanceacademy/assets/images/03/background.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background-size: cover;
+}
+#main-section-third .block-right-img-one .right-step-block p,
+#main-section-third .block-right-img-two .right-step-block p,
+#main-section-third .block-left-img-one .left-step-block p,
+#main-section-third .block-left-img-two .left-step-block p
+{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 0 auto !important;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+#main-section-third .block-right-img-one:hover .right-step-block,
+#main-section-third .block-right-img-two:hover .right-step-block
+{
+  -webkit-transform: translate(-120px, 120px);
+  transform: translate(-120px, 120px);
+  z-index: 2;
+}
+#main-section-third .block-left-img-one:hover .left-step-block,
+#main-section-third .block-left-img-two:hover .left-step-block{
+  -webkit-transform: translate(120px, 120px);
+  transform: translate(120px, 120px);
+  z-index: 2;
+}
+#main-section-third .block-right-img-one,
+#main-section-third .block-right-img-two,
+#main-section-third .block-left-img-one,
+#main-section-third .block-left-img-two{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 75px;
+}
+#main-section-third .block-right-img-one .right-step-block,
+#main-section-third .block-right-img-two .right-step-block,
+#main-section-third .block-left-img-one .left-step-block,
+#main-section-third .block-left-img-two .left-step-block{
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    z-index: 1;
+    transition-duration: 2s;
+    width: 100%;
+    background-size: cover;
+}
+#main-section-third .block-right-img-one .detail-card,
+#main-section-third .block-right-img-two .detail-card,
+#main-section-third .block-left-img-one .detail-card,
+#main-section-third .block-left-img-two .detail-card{
+    padding: 15px;
+    font-size: 20px;
+}
+#main-section-third .block-right-img-one{
+     background: url('/wp-content/themes/airdanceacademy/assets/images/03/block-01.png');
+     background-size: cover;
+}
+#main-section-third .block-right-img-two{
+     background: url('/wp-content/themes/airdanceacademy/assets/images/03/block-02.png');
+     background-size: cover;
+}
+#main-section-third .block-left-img-one{
+    background: url('/wp-content/themes/airdanceacademy/assets/images/03/block-03.png');
+    background-size: cover;
+}
+#main-section-third .block-left-img-two{
+    background: url('/wp-content/themes/airdanceacademy/assets/images/03/block-04.png');
+    background-size: cover;
+}
+#main-section-third .block-right-img-one .right-step-block{
+    background: url('/wp-content/themes/airdanceacademy/assets/images/03/block-01-up.png');
+    background-size: cover;
+}
+#main-section-third .block-right-img-two .right-step-block{
+    background: url('/wp-content/themes/airdanceacademy/assets/images/03/block-01-up.png');
+    background-size: cover;
+}
+#main-section-third .block-left-img-one .left-step-block{
+    background: url('/wp-content/themes/airdanceacademy/assets/images/03/block-01-up.png');
+     background-size: cover;
+}
+#main-section-third .block-left-img-two .left-step-block{
+    background: url('/wp-content/themes/airdanceacademy/assets/images/03/block-01-up.png');
+     background-size: cover;
+}
+#main-section-third .swiper-banner-one{
+    margin-top: 100px;
+}
+#main-section-third .swiper-banner-one .swiper-banner-img img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/***************************** SECTION FOURTH ***********************/
+#main-section-fourth .line-hover{
+    background-color:#EE2B7A;
+    width: 80%;
+    margin: 45px auto;
+    display: block;
+    height: 2px;
+    opacity: 0.7;
+}
+
+#main-section-fourth .paralax-text-one{
+    font-size: 300px;
+    text-transform: uppercase;
+    margin: -80px !important;
+    font-weight: 900;
+    color: white;
+}
+
+#main-section-fourth .circle-block, #main-section-fourth .circle-block img{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+#main-section-fourth .circle-block p
+{
+    position: absolute;
+    text-transform: uppercase;
+    font-family: "Montserrat-Bold";
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+#main-section-fourth .circle-block p a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+#main-section-fourth .circle-block p a:hover{
+    color: #EE2B7A;
+    transition-duration: 2s;
+}
+
+
+#main-section-fourth .circle-block .info-block-01,
+#main-section-fourth .circle-block .info-block-02,
+#main-section-fourth .circle-block .info-block-03,
+#main-section-fourth .circle-block .info-block-04{
+    position: absolute;
+}
+
+
+
+#main-section-fourth .circle-block .info-block-01{
+    top: 26%;
+    left: 33%;
+}
+#main-section-fourth .circle-block .info-block-02{
+    top: 26%;
+    right: 33%;
+}
+#main-section-fourth .circle-block .info-block-03{
+    top: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+}
+#main-section-fourth .circle-block .info-block-04{
+    top: 35%;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+}
+#main-section-fourth .paralax-text-two{
+    text-align: right;
+    font-size: 300px;
+    text-transform: uppercase;
+    margin: -80px !important;
+    font-weight: 900;
+    color: white;
+    margin-right: 30px;
+}
+/***************************** SECTION FIFTH ***********************/
+#main-section-fifth .line-hover{
+    background-color:#EE2B7A;
+    width: 80%;
+    margin: 45px auto;
+    display: block;
+    height: 2px;
+    opacity: 0.7;
+}
+
+#main-section-fifth .paralax-text-one{
+    font-size: 300px;
+    text-transform: uppercase;
+    margin-bottom: 0px !important;
+    font-weight: 900;
+    color: white;
+}
+
+
+#main-section-fifth .news-block h3{
+    margin-bottom: 0px !important;
+    font-family: "Montserrat-Light";
+    font-size: 16px;
+    margin-bottom: -10px !important;
+    margin-top: 3px;
+    font-weight: 200;
+}
+#main-section-fifth .news-block span{
+    margin-bottom: 0px !important;
+    font-family: "Montserrat-Light";
+    font-size: 12px;
+    color: #F30BEA !important;
+    font-weight: 200;
+}
+#main-section-fifth .news-block a{
+    color: #070707;
+    text-decoration: none;
+}
+#main-section-fifth .news-block a:hover{
+    color: #EE2B7A;
+    transition-duration: 2s;
+}
+
+
+
+#main-section-fifth .news-block .zoom-hover-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+
+#main-section-fifth .news-block .zoom-hover-img img{
+    height: 150px !important;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+#main-section-fifth .news-block .zoom-hover-img img:hover{
+-webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+#main-section-fift .container{
+    margin-top: 30px !important;
+}
+
+
+
+@media (max-width: 1199.98px) {
+
+}
+@media (max-width: 991.98px) {
+
+}
+
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 575.98px){
+
+}
